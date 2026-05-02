@@ -188,10 +188,25 @@ def main():
     from pathlib import Path as _Path
 
     parser = argparse.ArgumentParser(description="LazyOwn OpenCode Adapter")
+    def _find_lazyown_dir() -> _Path:
+        env = os.environ.get("LAZYOWN_DIR")
+        if env:
+            return _Path(env)
+        adapter_dir = _Path(__file__).parent.resolve()
+        for candidate in [
+            adapter_dir.parent.parent.parent,
+            adapter_dir.parent.parent,
+            adapter_dir.parent,
+            _Path.cwd(),
+        ]:
+            if (candidate / "skills" / "lazyown_mcp.py").exists():
+                return candidate
+        return _Path.cwd()
+
     parser.add_argument(
         "--lazyown-dir",
         type=_Path,
-        default=_Path(os.environ.get("LAZYOWN_DIR", "/home/grisun0/LazyOwn")),
+        default=_find_lazyown_dir(),
         help="Path to the LazyOwn framework directory.",
     )
     parser.add_argument(
