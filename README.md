@@ -1,6 +1,133 @@
-# template
-template for the  future proyects ;)
+# LazyOwn OpenCode Adapter
 
-![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Shell Script](https://img.shields.io/badge/shell_script-%23121011.svg?style=for-the-badge&logo=gnu-bash&logoColor=white) ![Flask](https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white) [![License: AGPL v3](https://img.shields.io/badge/License-AGPLv3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+OpenAI-compatible function calling adapter for the LazyOwn pentesting framework.
 
-[![ko-fi](https://ko-fi.com/img/githubbutton_sm.svg)](https://ko-fi.com/Y8Y2Z73AV)
+Bridges the LazyOwn MCP server with OpenCode, Kimi, and any OpenAI-compatible client by translating tool schemas and providing a REST interface for tool discovery and execution.
+
+## Architecture
+
+```
+OpenCode / Kimi / OpenAI Client
+        |
+        | HTTP JSON (OpenAI function format)
+        v
+  LazyOwn OpenCode Adapter (this repo)
+        |
+        | stdio MCP protocol
+        v
+  LazyOwn MCP Server (lazyown_mcp.py)
+        |
+        | Python imports + subprocess
+        v
+  LazyOwn Framework
+```
+
+## Installation
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
+
+## Configuration
+
+All configuration is parameterizable via CLI arguments or environment variables. No absolute paths are hardcoded.
+
+### CLI Arguments
+
+| Argument | Default | Environment Variable | Description |
+|----------|---------|---------------------|-------------|
+| `--lazyown-dir` | `LAZYOWN_DIR` or `/home/grisun0/LazyOwn` | `LAZYOWN_DIR` | Path to the LazyOwn framework directory. |
+| `--host` | `127.0.0.1` | `ADAPTER_HOST` | Host to bind the adapter server. |
+| `--port` | `9872` | `ADAPTER_PORT` | Port to bind the adapter server. |
+| `--log-level` | `info` | `ADAPTER_LOG_LEVEL` | Logging level. |
+
+### Example
+
+```bash
+python3 adapter.py --lazyown-dir /opt/LazyOwn --host 0.0.0.0 --port 8080
+```
+
+## Endpoints
+
+### GET /health
+
+Health check.
+
+```bash
+curl http://127.0.0.1:9872/health
+```
+
+### GET /tools
+
+List all available LazyOwn tools in OpenAI function format.
+
+```bash
+curl http://127.0.0.1:9872/tools
+```
+
+### POST /call
+
+Execute a tool by name with arguments.
+
+```bash
+curl -X POST http://127.0.0.1:9872/call \
+  -H "Content-Type: application/json" \
+  -d '{
+    "name": "lazyown_set_config",
+    "arguments": {
+      "key": "rhost",
+      "value": "10.10.11.78"
+    }
+  }'
+```
+
+### GET /config
+
+Show current adapter configuration.
+
+```bash
+curl http://127.0.0.1:9872/config
+```
+
+## Using with OpenCode
+
+Since OpenCode supports tool calling natively via HTTP, configure the adapter and then make requests to it using the standard tool calling workflow.
+
+Example workflow:
+
+1. Start the adapter:
+   ```bash
+   python3 adapter.py --lazyown-dir /path/to/LazyOwn
+   ```
+
+2. List available tools:
+   ```bash
+   curl -s http://127.0.0.1:9872/tools | python3 -m json.tool
+   ```
+
+3. Call a tool:
+   ```bash
+   curl -s -X POST http://127.0.0.1:9872/call \
+     -H "Content-Type: application/json" \
+     -d '{"name": "lazyown_get_config", "arguments": {}}'
+   ```
+
+## Files
+
+| File | Description |
+|------|-------------|
+| `config.py` | Immutable configuration dataclass. All paths are derived from `lazyown_dir`. |
+| `adapter.py` | FastAPI application + MCP client + OpenAI function translator. |
+| `requirements.txt` | Python dependencies. |
+
+## Requirements
+
+- Python 3.10+
+- LazyOwn framework installed at any path (configured via `--lazyown-dir`)
+- `mcp` Python SDK (installed automatically via requirements.txt)
+
+## License
+
+Same as LazyOwn.
