@@ -1,0 +1,1117 @@
+{
+  "concepts": [
+    {
+      "name": "lazy",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "own",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 13,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "adapter",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 10,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "mcp",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 9,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "open",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 7,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "app",
+      "files": [
+        "adapter.py",
+        "app.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "config",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "dir",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 4,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "all",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "code",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 3,
+      "confidence": "EXTRACTED"
+    },
+    {
+      "name": "configuration",
+      "files": [
+        "adapter.py",
+        "config.py"
+      ],
+      "mentions": 2,
+      "confidence": "EXTRACTED"
+    }
+  ],
+  "relations": [
+    {
+      "source": "adapter",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "adapter",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "all",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "app",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "code",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "config",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "configuration",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "dir",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "lazy",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "mcp",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "open",
+      "target": "own",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "adapter",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "all",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "code",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "config",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "configuration",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "dir",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "lazy",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "mcp",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    },
+    {
+      "source": "own",
+      "target": "open",
+      "verb": "depends_on",
+      "strength": 1.0,
+      "confidence": "INFERRED",
+      "evidence": [
+        "adapter.py->config.py"
+      ]
+    }
+  ],
+  "dialectic": [
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `all` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `code` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `config` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `configuration` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `dir` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `lazy` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `mcp` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `open` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `adapter` centralizes 2 files; Antithesis: `own` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?",
+    "Thesis: `all` centralizes 2 files; Antithesis: `code` pulls 2 files with 2 shared (Jaccard 1.00); Synthesis: should they merge, split by layer, or keep `depends_on` explicit?"
+  ]
+}
